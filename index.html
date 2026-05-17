@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Rincón Cuscatleco // Gastronomía de El Salvador</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="logo">Sabor<span>Salvadoreño</span></a>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#hero" class="nav-link">Inicio</a>
+                <a href="#nosotros" class="nav-link">Nuestra Historia</a>
+                <a href="#servicios" class="nav-link">El Menú</a>
+                <a href="#contacto" class="nav-link">Pedidos y Reservas</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <h1>El auténtico sabor de la tierra cuscatleca</h1>
+            <p>Disfruta de las mejores pupusas hechas a mano, tamales tradicionales y los antojitos típicos más deliciosos de El Salvador.</p>
+            <a href="#contacto" class="btn-cta">Haz tu pedido aquí</a>
+        </div>
+    </section>
+
+    <section id="nosotros" class="section container">
+        <div class="nosotros-text">
+            <h2>Tradición que se cocina con el corazón</h2>
+            <p>En El Rincón Cuscatleco nos dedicamos a preservar las recetas ancestrales de nuestros abuelos. Cada ingrediente es seleccionado cuidadosamente: desde el maíz tierno para los tamales hasta el quesillo original y el chicharrón tierno para las pupusas. Queremos llevar un pedacito de El Salvador a tu paladar con frescura, sabor e identidad.</p>
+        </div>
+    </section>
+
+    <section id="servicios" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Nuestras Delicias Tradicionales</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Pupusas Hechas a Mano</h3>
+                    <p>Las reinas de nuestra gastronomía. Disfruta de las tradicionales de revueltas, queso con loroco, chicharrón o frijol con queso, acompañadas de curtido artesanal y salsa de tomate natural.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Tamales y Riguas</h3>
+                    <p>Exquisitos tamales de gallina india, tamales de elote tierno con crema, y riguas envueltas en hoja de plátano acompañadas con una porción de queso fresco.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Antojitos de la Tarde</h3>
+                    <p>El combo perfecto para el café: empanadas de poleada o frijol, pastelitos de carne bien tostados, y yuca frita con chicharrones o pescaditas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="section container">
+        <h2 class="section-title">Haz tu Pedido o Reserva</h2>
+        <div class="form-container">
+            <form id="contact-form" novalidate>
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej. María Elena López">
+                    <span class="error-message" id="error-nombre"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="ejemplo@correo.com">
+                    <span class="error-message" id="error-email"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Detalles de tu orden o evento</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Ej. Quiero encargar 10 pupusas revueltas de arroz y 3 tamales de elote para llevar..."></textarea>
+                    <span class="error-message" id="error-mensaje"></span>
+                </div>
+
+                <button type="submit" class="btn-submit">Enviar Orden</button>
+                <div id="success-message" class="success-message">¡Buen provecho! Tu pedido ha sido recibido. Nos comunicaremos contigo de inmediato.</div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 El Rincón Cuscatleco. Orgullosamente Salvadoreño.</p>
+            <p>Desarrollado por Jhoni Torres.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
