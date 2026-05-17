@@ -27,7 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-
     // === CRITERIO: VALIDACIÓN DE FORMULARIO ===
     const form = document.getElementById('contact-form');
     const nombreInput = document.getElementById('nombre');
